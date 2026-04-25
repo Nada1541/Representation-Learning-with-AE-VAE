@@ -1,5 +1,3 @@
-"""Plotting helpers: reconstructions, latent space, samples, loss curves."""
-
 import numpy as np
 import matplotlib.pyplot as plt
 import tensorflow as tf

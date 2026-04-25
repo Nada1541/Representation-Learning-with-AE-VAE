@@ -1,5 +1,3 @@
-"""Convolutional Autoencoder for 64x64 grayscale medical images."""
-
 import tensorflow as tf
 from tensorflow.keras import Model, layers
 

@@ -1,5 +1,3 @@
-"""Train loops for the AE and VAE."""
-
 import os
 
 import tensorflow as tf
@@ -37,6 +35,10 @@ def train_ae(model, train_ds, val_ds, epochs=20, lr=1e-3, save_path=None):
 
 def train_vae(model, train_ds, val_ds, epochs=20, lr=1e-3, save_path=None):
     model.compile(optimizer=tf.keras.optimizers.Adam(lr))
+    for x_batch, _ in train_ds.take(1):
+        _ = model(x_batch, training=False)
+        break
+
     return model.fit(
         train_ds,
         validation_data=val_ds,

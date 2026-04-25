@@ -1,6 +1,3 @@
-"""Project configuration: paths, dataset info, and hyperparameters."""
-
-# Paths (the notebook overrides these)
 DATA_ROOT = "/content/medical_mnist"
 OUTPUT_DIR = "/content/drive/MyDrive/medical_mnist_outputs"
 

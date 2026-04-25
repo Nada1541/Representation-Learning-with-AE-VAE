@@ -1,5 +1,3 @@
-"""tf.data input pipeline for Medical MNIST."""
-
 import os
 import random
 

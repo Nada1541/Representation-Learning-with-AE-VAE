@@ -1,5 +1,3 @@
-"""Variational Autoencoder with the reparameterization trick."""
-
 import tensorflow as tf
 from tensorflow.keras import Model, layers, metrics
 
