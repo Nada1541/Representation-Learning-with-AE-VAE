@@ -1,3 +1,6 @@
+"""Project configuration: paths, dataset info, and hyperparameters."""
+
+# Paths
 DATA_ROOT = "/content/medical_mnist"
 OUTPUT_DIR = "/content/drive/MyDrive/medical_mnist_outputs"
 
@@ -10,9 +13,9 @@ SEED = 42
 
 # Training
 BATCH_SIZE = 128
-EPOCHS = 20
+EPOCHS = 30           # was 20 — more epochs help both models
 LEARNING_RATE = 1e-3
 
 # Model
-LATENT_DIM = 16
-KL_WEIGHT = 1.0
+LATENT_DIM = 32       # was 16 — more capacity = sharper recons
+KL_WEIGHT = 0.001     # was 1.0 — much smaller β = sharper VAE images
